@@ -11,8 +11,7 @@ public class Employees {
         System.out.println("4. back\n");
 
         System.out.println("Navigate to: ");
-        int to = Integer.parseInt(scanner.nextLine());
-        return to;
+        return Integer.parseInt(scanner.nextLine());
     }
 
     static  void navigate(int to){
@@ -34,7 +33,6 @@ public class Employees {
         System.out.println("Enter -1 for back\n");
 
         System.out.println("Navigate to: ");
-        int to = Integer.parseInt(scanner.nextLine());
-        return to;
+        return Integer.parseInt(scanner.nextLine());
     }
 }

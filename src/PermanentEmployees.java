@@ -30,8 +30,7 @@ public class PermanentEmployees {
             System.out.println("Id: "+employee.id + "\nName: " + employee.name + "\n\n");
         }
 
-        int to = Employees.showEmployeesMenu();
-        return to;
+        return Employees.showEmployeesMenu();
     }
     static boolean validateMenuInput(int to){
         boolean valid = false;
@@ -40,8 +39,9 @@ public class PermanentEmployees {
         }else {
             boolean available = false;
             for (PermanentEmployee employee: permanentEmployees){
-                if (employee.id == to){
+                if (employee.id == to) {
                     available = true;
+                    break;
                 }
             }
             if(available){

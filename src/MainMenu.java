@@ -12,8 +12,7 @@ public class MainMenu {
         System.out.println("3. Log out\n");
 
         System.out.println("Navigate to: ");
-        int to = Integer.parseInt(scanner.nextLine());
-        return to;
+        return Integer.parseInt(scanner.nextLine());
     }
 
     static  void navigate(int to){

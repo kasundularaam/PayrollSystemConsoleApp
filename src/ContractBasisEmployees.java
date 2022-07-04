@@ -28,8 +28,7 @@ public class ContractBasisEmployees {
             System.out.println("Id: "+employee.id + "\nName: " + employee.name + "\n\n");
         }
 
-        int to = Employees.showEmployeesMenu();
-        return to;
+        return Employees.showEmployeesMenu();
     }
 
     static boolean validateMenuInput(int to){
@@ -39,8 +38,9 @@ public class ContractBasisEmployees {
         }else {
             boolean available = false;
             for (ContractBasisEmployee employee: contractBasisEmployees){
-                if (employee.id == to){
+                if (employee.id == to) {
                     available = true;
+                    break;
                 }
             }
             if(available){
